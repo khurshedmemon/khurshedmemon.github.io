@@ -18,26 +18,128 @@
 	<body id="top" style="visibility:hidden">
 
 		<!-- Header -->
-		<header id="header"></header>
+		<header id="header">
+				
+		</header>
 
 		<!-- Main -->
-		<div id="main">
-			<section id="about">
-				<p> A passionate about Machine Learning and Deep Reinforcement Learning Research. </p>
+			<div id="main">
+                <section id="project">
+                    <h1><b>Project</b></h1>
+                    <!-- Performance analysis-->
 
-				<p> Currently a Lecturer in Department of Computer Science at <a href="https://www.iba-suk.edu.pk">IBA Sukkur University</a>. <br><br>
+                    <!-- Instrument activity aware source separation-->
+                    <h2><b>Instrument activity aware source separation</b></h2>
+                    <article class="12u 12u$(12)">
+                        <p style="margin: -20px 0 1em 0">
+                            <a href="https://arxiv.org/pdf/2008.00616.pdf" class="far fa-sticky-note"><span class="label">Paper</span></a>
+                            <a href="https://github.com/biboamy/Source_Separation_Inst" class="fab fa-github"><span class="label">Github</span></a>
+                            <a href="https://musicinformatics.gatech.edu/conferences/multi-task-learning-for-instrument-activation-aware-music-source-separation/" class="fa fa-globe"><span class="label">Blog</span></a>
+                            <a href="https://biboamy.github.io/Source_Separation_Inst/" class="fa fa-globe"><span class="label">Demo</span></a>
+                        </p>
+                        <p><img class="image right img_size" src="images/IASS-model.png" />Music source separation is a core task in music informationretrieval which has seen a dramatic improvement in the pastyears.  Nevertheless, most of the existing systems focusexclusively on the problem of source separation itself andignore the utilization of other —possibly related— MIRtasks which could lead to additional quality gains. In thiswork, we propose a novel multitask structure to investigateusing instrument activation information to improve sourceseparation performance. Furthermore, we investigate oursystem on six independent instruments, a more realisticscenario than the three instruments included in the widely-used MUSDB dataset, by leveraging a combination of theMedleyDB and Mixing Secrets datasets. The results showthat our proposed multitask model outperforms the baselineOpen-Unmix model on the mixture of Mixing Secrets andMedleyDB dataset while maintaining comparable perfor-mance on the MUSDB dataset. 
+                    </article>
+                    <hr>
+
+                    <!-- Animal Harmonizer -->
+                    <h2><b>Animal Harmonizer</b></h2>
+                    <article class="12u 12u$(12)">
+                        <p style="margin: -20px 0 1em 0">
+                            <a href="https://biboamy.github.io/MIRProject/demoSite/demo.html" class="fa fa-globe"><span class="label">Website</span></a>
+                        </p>
+                        <p><img class="image right img_size" src="images/overview.png" />Imagine now you have many recordings with you singing melody line or playing melody on instruments. It would be boring to share these monophonic recordings with friends. To solve this problem, we created a machine learning system to which users can input a melody line. The system will automatically transcript the melody line and harminize the melody line for you. To be more fun, we also provide an animal synthesizer so that users can choose which animals to sing the harminics for you! 
+                    </article>
+                    <hr>
+
+                    <!-- Music disentanglement -->
+                    <h2><b>Music Disentanglement</b></h2>
+                    <article class="12u 12u$(12)">
+                        <p style="margin: -20px 0 1em 0">
+                            <a href="https://arxiv.org/pdf/1811.03271.pdf" class="far fa-sticky-note"><span class="label">Paper 1</span></a>
+                            <a href="http://arxiv.org/pdf/1905.13567" class="far fa-sticky-note"><span class="label">Paper 2</span></a>
+                            <a href="https://github.com/biboamy/instrument-disentangle/" class="fab fa-github"><span class="label">Github</span></a>
+                            <a href="https://biboamy.github.io/disentangle_demo/result/index.html" class="fa fa-globe"><span class="label">Website</span></a>
+                        </p>
+                        <p><img class="image right img_size" src="images/disentanglement.png" />For some applications we need a feature representation that is not sensitive to the changes in other features. For example, in cover song identification or query by humming we only need pitch information while in singer identification we only need timbre information. As a result, in this music disentanglement project, we proposed a deep auto-encoder model with adversarial training to learn timbre and pitch invariant representations. By using the learned timbre representation as the input feature, we can achieve state-of-the-art frame-level instrument prediction result. Moreover, by replacing the timbre representation, the model can also achieve composition music style transfer.  
+                        <p style="margin: -10px 0 1em 0">
+                            <li>
+                                <a href="https://biboamy.github.io/disentangle-demo/result/index.html">Demo: composition style transfer</a>
+                            </li>
+                        </p>
+                    </article>
+                    <hr>
+
+                    <!-- Music Streaming -->
+                    <h2><b>Multitask Learning</b></h2>
+                    <article class="12u 12u$(12)">
+                        <p style="margin: -20px 0 1em 0">
+                            <a href="https://arxiv.org/pdf/1811.01143.pdf" class="far fa-sticky-note"><span class="label">Paper</span></a>
+                            <a href="https://github.com/biboamy/instrument-streaming" class="fab fa-github"><span class="label">Github</span></a>
+                            <a href="https://biboamy.github.io/streaming-demo/main_site/index.html" class="fa fa-globe"><span class="label">Website</span></a>
+                            <a href=" https://biboamy.github.io/streaming-demo/source/multitask%20learning-icassp2019-poster.pdf" class="fas fa-file-pdf"><span class="label">Poster</span></a>
+                        </p>
+                        <p><img class="image right img_size" src="images/stream_model.png"/>
+                        In this project, we propose a specialized multitask model to explore the relation between pitch and instrument information. This model can predict pitch, instrument, and pianorolls at the same time. By jointly predicting the labels, the model achieves better performance than other single-task models.The predicted pianorolls can also be used to recognize the instrument that plays each individual note event and achieve multi-instrument transcription. 
+                        </p>
+                        <p style="margin: -10px 0 1em 0">
+                            <li>
+                                <a href="https://biboamy.github.io/instrument-demo/demo.html">Demo: instrument recognition</a>
+                            </li>
+                            <li>
+                                <a href="https://biboamy.github.io/streaming-demo/streaming/">Demo: multi-instrument transcription</a>
+                            </li>
+                        </p>
+                    </article>
+                    <hr>
+
+                    <h2><b>Instrument Recognition</b></h2>
+                    <article class="12u 12u$(12)">
+                        <p style="margin: -20px 0 1em 0">
+                            <a href="http://ismir2018.ircam.fr/doc/pdfs/55_Paper.pdf" class="far fa-sticky-note"><span class="label">Paper</span></a>
+                            <a href="https://github.com/biboamy/instrument-prediction" class="fab fa-github"><span class="label">Github</span></a>
+                            <a href="https://biboamy.github.io/instrument-demo/index.html" class="fa fa-globe"><span class="label">Website</span></a>
+                            <a href="https://biboamy.github.io/instrument-demo/source/amy-ismir2018-slide.pdf" class="fas fa-file-pdf"><span class="label">Slide</span></a>
+                            <a href="https://biboamy.github.io/instrument-demo/source/amy-ismir2018-poster.pdf" class="fas fa-file-pdf"><span class="label">Poster</span></a>
+                        </p>
+
+                        <!-- Instrument recognition -->
+                        <p><img class="image right img_size" src="images/inst_model.png" />Instrument Recognition project focuses on polyphonic frame-level instrument tagging. The model will predict the presence of instruments in each time step so that we can know the starting time and ending time of each instrument. We proposed to use pitch to guide the learning of instrument tags, with the premise that doing so informs the model the notes that are active per frame, and also encourages the model to learn relative rates of energy buildup in the harmonic partials of different instruments. The model is trained with <a href="https://homes.cs.washington.edu/~thickstn/musicnet.html">MusicNet Dataset</a>. 
+
+                        <p>The second stage of this project is to increase instrument categories. We collected a large-scale synthesized dataset, <a href="">Musescore Dataset</a>, to train the model. Musescore Dataset contains over 330,000 pieces of songs with their related audio and MIDI pairs. 
+                        <p style="margin: -10px 0 1em 0">
+                            <li>
+                                <a href="https://biboamy.github.io/instrument-demo/demo.html">Demo: instrument recognition</a>
+                            </li>
+                        </p>
+                    </article>
+                    <hr> 
+
+                    <h2><b>Music Auto Tagging</b></h2>
+                    <article class="12u 12u$(12)">
+                        <!-- Genre tagging -->
+                        <p><img class="image right img_size" src="images/genre_model.jpg" />
+                        The goal of this project is to give machine the ability to classify music pieces into different tags. The tags can be genre, mood, and context. We analyze music signal from both audio and lyrics. More information is listed bellow:
+                        <p style="margin: -20px 0 1em 0">
+                            <li>
+                                <a href="https://biboamy.github.io/genre-classification/">Genre/Subgenre classification</a>
+                            </li>
+                            <li>
+                                Mood classification [coming soon]
+                            </li>
+                            <li>
+                                Context classification [coming soon]
+                            </li>
+                        </p>
+                    </article>
+                    <hr>
+                </section>
+            </div>
 				
-				I was a PhD research fellow, working with <a href="http://snaclab.citi.sinica.edu.tw/">Dr. Chih-Yu Wang</a> from Academia Sinica Taiwan, and <a href="http://www.cs.nthu.edu.tw/~yishin/"> Prof. Yi-Shin Chen </a> from National Tsing Hua University, Taiwan. <br><br>
-
-				My research interests are social networks analysis, reinforcement learning, deep reinforcement learning, health informatics, data mining and machine learning. Especially intersection of reinfocement and deep reifnorcement learning for social networks analysis, health informatics. See my 
-                <a href="https://khurshedmemon.github.io/research.html">projects</a> for details.<br><br>
-
-                </p>  
-			</section>
-        </div>
 			
 		<!-- Footer -->
-		<footer id="footer"></footer>
+			<footer id="footer">
+				
+			</footer>
 
 	</body>
 </html>
