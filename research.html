@@ -25,112 +25,65 @@
 		<!-- Main -->
 			<div id="main">
                 <section id="project">
-                    <h1><b>Project</b></h1>
-                    <!-- Performance analysis-->
+                    <h1><b>Research Projects</b></h1>
+                    <!-- DRL-Frameworks-->
 
-                    <!-- Instrument activity aware source separation-->
-                    <h2><b>Instrument activity aware source separation</b></h2>
+                    <!--  DRL Framework for Unknown Social Networks-->
+                    <h2><b>Deep Reinforcement Learning Meets Network Embedding for Evolving Social Networks</b></h2>
                     <article class="12u 12u$(12)">
                         <p style="margin: -20px 0 1em 0">
-                            <a href="https://arxiv.org/pdf/2008.00616.pdf" class="far fa-sticky-note"><span class="label">Paper</span></a>
-                            <a href="https://github.com/biboamy/Source_Separation_Inst" class="fab fa-github"><span class="label">Github</span></a>
-                            <a href="https://musicinformatics.gatech.edu/conferences/multi-task-learning-for-instrument-activation-aware-music-source-separation/" class="fa fa-globe"><span class="label">Blog</span></a>
-                            <a href="https://biboamy.github.io/Source_Separation_Inst/" class="fa fa-globe"><span class="label">Demo</span></a>
+                            <a href="" class="far fa-sticky-note"><span class="label">Paper</span></a>
+                            <a href="https://github.com/khurshedmemon/DQN-ESN" class="fab fa-github"><span class="label">Github</span></a>
                         </p>
-                        <p><img class="image right img_size" src="images/IASS-model.png" />Music source separation is a core task in music informationretrieval which has seen a dramatic improvement in the pastyears.  Nevertheless, most of the existing systems focusexclusively on the problem of source separation itself andignore the utilization of other —possibly related— MIRtasks which could lead to additional quality gains. In thiswork, we propose a novel multitask structure to investigateusing instrument activation information to improve sourceseparation performance. Furthermore, we investigate oursystem on six independent instruments, a more realisticscenario than the three instruments included in the widely-used MUSDB dataset, by leveraging a combination of theMedleyDB and Mixing Secrets datasets. The results showthat our proposed multitask model outperforms the baselineOpen-Unmix model on the mixture of Mixing Secrets andMedleyDB dataset while maintaining comparable perfor-mance on the MUSDB dataset. 
+                        <p><img class="image right img_size" src="images/drl_esn.png" />Competitive Influence Maximization (CIM) aims to maximize the influence of a party given the competition from other parties in the same social network, like companies find key users to promote their competitive products on the social network to achieve maximum profit. Recently, learning-based solutions are introduced to tackle the competitive influence maximization problem. However, such studies focus on the static nature of social networks. This paper proposes a deep reinforcement learning-based framework employing network embedding, termed as DRL-EMB, to tackle the CIM problem on evolving social networks. The DRL-EMB key objective is to find the best strategy to maximize the party's reward, considering budget and competition with information propagation and network evolving being run in parallel. We validate our proposed framework with the DRL-based model using hand-crafted state features (DRL-HCF) and heuristic-based methods. Experimental results show that our proposed framework, DRL-EMB, achieves better results than heuristic-based and DRL-HCF models while significantly outperforming the DRL-HCF model in terms of time efficiency. 
                     </article>
                     <hr>
 
-                    <!-- Animal Harmonizer -->
-                    <h2><b>Animal Harmonizer</b></h2>
+                    <!-- DRL Framework for Unknown Social Networks -->
+                    <h2><b>Deep Reinforcement Learning and Transfer Learning for Unknown Social Networks</b></h2>
                     <article class="12u 12u$(12)">
                         <p style="margin: -20px 0 1em 0">
-                            <a href="https://biboamy.github.io/MIRProject/demoSite/demo.html" class="fa fa-globe"><span class="label">Website</span></a>
+                            <a href="http://dx.doi.org/10.1109/ASONAM49781.2020.9381471" class="far fa-sticky-note"><span class="label">Paper</span></a>                            
+                            <a href="https://github.com/khurshedmemon/DQN-UN-TL" class="fab fa-github"><span class="label">Github</span></a>
                         </p>
-                        <p><img class="image right img_size" src="images/overview.png" />Imagine now you have many recordings with you singing melody line or playing melody on instruments. It would be boring to share these monophonic recordings with friends. To solve this problem, we created a machine learning system to which users can input a melody line. The system will automatically transcript the melody line and harminize the melody line for you. To be more fun, we also provide an animal synthesizer so that users can choose which animals to sing the harminics for you! 
+                        <p><img class="image right img_size" src="images/drl_un.png" />Recent studies have considered the reinforcement and deep reinforcement learning models to address the competitive influence maximization (CIM) problem. However, these models assume complete network topology information is available to address the CIM problem. This assumption is unrealistic as it is difficult to obtain complete social network data and requires exhaustive efforts to obtain it. In this work, we propose a deep reinforcement learning-based (DRL) model to tackle the competitive influence maximization on unknown social networks. Our proposed model has a two-fold objective: the first is to identify the time when to explore the network to collect network information. The second is to determine key influential users from the explored network, using optimal seed-selection strategy considering the competition in the social network. Moreover, we integrate the transfer learning in DRL to improve the training efficiency of DRL models. Experimental results show that our proposed DRL and transfer learning-based DRL models achieve significantly better performance than heuristic-based methods. 
                     </article>
                     <hr>
 
-                    <!-- Music disentanglement -->
-                    <h2><b>Music Disentanglement</b></h2>
+                    <!-- DRL Framework for Social Networks -->
+                    <h2><b>DRL-based Method for Social Networks Analysis</b></h2>
                     <article class="12u 12u$(12)">
                         <p style="margin: -20px 0 1em 0">
-                            <a href="https://arxiv.org/pdf/1811.03271.pdf" class="far fa-sticky-note"><span class="label">Paper 1</span></a>
-                            <a href="http://arxiv.org/pdf/1905.13567" class="far fa-sticky-note"><span class="label">Paper 2</span></a>
-                            <a href="https://github.com/biboamy/instrument-disentangle/" class="fab fa-github"><span class="label">Github</span></a>
-                            <a href="https://biboamy.github.io/disentangle_demo/result/index.html" class="fa fa-globe"><span class="label">Website</span></a>
-                        </p>
-                        <p><img class="image right img_size" src="images/disentanglement.png" />For some applications we need a feature representation that is not sensitive to the changes in other features. For example, in cover song identification or query by humming we only need pitch information while in singer identification we only need timbre information. As a result, in this music disentanglement project, we proposed a deep auto-encoder model with adversarial training to learn timbre and pitch invariant representations. By using the learned timbre representation as the input feature, we can achieve state-of-the-art frame-level instrument prediction result. Moreover, by replacing the timbre representation, the model can also achieve composition music style transfer.  
-                        <p style="margin: -10px 0 1em 0">
-                            <li>
-                                <a href="https://biboamy.github.io/disentangle-demo/result/index.html">Demo: composition style transfer</a>
-                            </li>
-                        </p>
+                            <a href="https://www.mlgworkshop.org/2019/papers/MLG2019_paper_3.pdf" class="far fa-sticky-note"><span class="label">Paper</span></a>
+                            <a href="https://github.com/khurshedmemon/dqn-kdd/" class="fab fa-github"><span class="label">Github</span></a>                            
+                        </p>Competitive Influence Maximization (CIM) problem studies the competition among multiple parties where each party aims to maximize their profit while competing against other parties. Recently, Reinforcement-Learning based models have been proposed to address the CIM problem. However, such models are unscalable and incapable of handling changes in the network structure. Motivated by the recent success of Deep Reinforcement Learning models and their capability to handle complex problems, we propose a novel Deep Reinforcement learning based framework (DRIM) to address the multi-round competitive influence maximization problem. DRIM framework considers the community structure of the social network for budget allocation and feature extraction with deep Q network in order to reduce the computational time of seed selection. The proposed framework employs the quota-based $\epsilon$-greedy policy to explore the optimality of influence maximization strategies and budget allocation for each community. Experimental results show that the proposed DRIM framework performs better than the state-of-art algorithms to tackle the multi-round CIM problem.                          
                     </article>
                     <hr>
 
-                    <!-- Music Streaming -->
-                    <h2><b>Multitask Learning</b></h2>
+                    <!-- Novel Nested Q-Learning -->
+                    <h2><b>Novel Nested Q-Learning for Time-Constrained Social Networks</b></h2>
                     <article class="12u 12u$(12)">
                         <p style="margin: -20px 0 1em 0">
-                            <a href="https://arxiv.org/pdf/1811.01143.pdf" class="far fa-sticky-note"><span class="label">Paper</span></a>
-                            <a href="https://github.com/biboamy/instrument-streaming" class="fab fa-github"><span class="label">Github</span></a>
-                            <a href="https://biboamy.github.io/streaming-demo/main_site/index.html" class="fa fa-globe"><span class="label">Website</span></a>
-                            <a href=" https://biboamy.github.io/streaming-demo/source/multitask%20learning-icassp2019-poster.pdf" class="fas fa-file-pdf"><span class="label">Poster</span></a>
+                            <a href="https://ieeexplore.ieee.org/document/8584421" class="far fa-sticky-note"><span class="label">Paper</span></a>
+                            <a href="https://github.com/khurshedmemon/Time-Constrained-CIM" class="fab fa-github"><span class="label">Github</span></a>
                         </p>
-                        <p><img class="image right img_size" src="images/stream_model.png"/>
-                        In this project, we propose a specialized multitask model to explore the relation between pitch and instrument information. This model can predict pitch, instrument, and pianorolls at the same time. By jointly predicting the labels, the model achieves better performance than other single-task models.The predicted pianorolls can also be used to recognize the instrument that plays each individual note event and achieve multi-instrument transcription. 
-                        </p>
-                        <p style="margin: -10px 0 1em 0">
-                            <li>
-                                <a href="https://biboamy.github.io/instrument-demo/demo.html">Demo: instrument recognition</a>
-                            </li>
-                            <li>
-                                <a href="https://biboamy.github.io/streaming-demo/streaming/">Demo: multi-instrument transcription</a>
-                            </li>
-                        </p>
+                        <p><img class="image right img_size" src="images/rl-nql.png"/>
+                        In this paper, we examine a time-constrained competitive influence maximization where the parties wish to maximize their profits before the respective deadlines. Besides, the parties need to determine how to select the seed nodes and when to initiate information propagation in the network, such that the decision results in the optimal reward given the time and the budget constraint. To this end, we propose a novel reinforcement learning-based framework named seed-combination and seed-selection that is built on a nested Q-learning (NSQ) algorithm. This way, we can derive the optimal in both budget allocation and node selection that results in the maximum profit. In evaluating the proposed model, we consider the scenarios when the competitors’ strategy is known, unknown, and not available for training. The results show that the proposed NSQ algorithm could improve the rewards by up to 50% compared with the state-of-the-art algorithm, STORM-Q.
+                        </p>                        
                     </article>
                     <hr>
 
-                    <h2><b>Instrument Recognition</b></h2>
+                    <h2><b>Boosting Reinforcement Learning with Transfer Learning</b></h2>
                     <article class="12u 12u$(12)">
                         <p style="margin: -20px 0 1em 0">
-                            <a href="http://ismir2018.ircam.fr/doc/pdfs/55_Paper.pdf" class="far fa-sticky-note"><span class="label">Paper</span></a>
-                            <a href="https://github.com/biboamy/instrument-prediction" class="fab fa-github"><span class="label">Github</span></a>
-                            <a href="https://biboamy.github.io/instrument-demo/index.html" class="fa fa-globe"><span class="label">Website</span></a>
-                            <a href="https://biboamy.github.io/instrument-demo/source/amy-ismir2018-slide.pdf" class="fas fa-file-pdf"><span class="label">Slide</span></a>
-                            <a href="https://biboamy.github.io/instrument-demo/source/amy-ismir2018-poster.pdf" class="fas fa-file-pdf"><span class="label">Poster</span></a>
+                            <a href="https://www.computer.org/csdl/proceedings-article/wi/2018/732500a395/17D45Wuc38w" class="far fa-sticky-note"><span class="label">Paper</span></a>
+                            <a href="https://github.com/khurshedmemon/Time-Constrained-CIM" class="fab fa-github"><span class="label">Github</span></a>                            
                         </p>
 
-                        <!-- Instrument recognition -->
-                        <p><img class="image right img_size" src="images/inst_model.png" />Instrument Recognition project focuses on polyphonic frame-level instrument tagging. The model will predict the presence of instruments in each time step so that we can know the starting time and ending time of each instrument. We proposed to use pitch to guide the learning of instrument tags, with the premise that doing so informs the model the notes that are active per frame, and also encourages the model to learn relative rates of energy buildup in the harmonic partials of different instruments. The model is trained with <a href="https://homes.cs.washington.edu/~thickstn/musicnet.html">MusicNet Dataset</a>. 
-
-                        <p>The second stage of this project is to increase instrument categories. We collected a large-scale synthesized dataset, <a href="">Musescore Dataset</a>, to train the model. Musescore Dataset contains over 330,000 pieces of songs with their related audio and MIDI pairs. 
-                        <p style="margin: -10px 0 1em 0">
-                            <li>
-                                <a href="https://biboamy.github.io/instrument-demo/demo.html">Demo: instrument recognition</a>
-                            </li>
+                        <!-- Boosting RL -->
+                        <p>In this work, we propose a transfer learning method in reinforcement learning to reduce the training time and utilize the knowledge gained on source network to target network. Our method relies on two ideas, the first one is the state representation of the source and target networks in order to efficiently utilize the knowledge gained on source network to target network. The second idea is to transfer the final Q-solution of source network while learning on the target network. We validate our transfer learning method in similar or different settings of source and target networks while competing against the competitor's known strategies. Experimental results show that our proposed transfer learning method achieves similar or better performance as a baseline model while significantly reducing training time in all settings. 
                         </p>
-                    </article>
-                    <hr> 
-
-                    <h2><b>Music Auto Tagging</b></h2>
-                    <article class="12u 12u$(12)">
-                        <!-- Genre tagging -->
-                        <p><img class="image right img_size" src="images/genre_model.jpg" />
-                        The goal of this project is to give machine the ability to classify music pieces into different tags. The tags can be genre, mood, and context. We analyze music signal from both audio and lyrics. More information is listed bellow:
-                        <p style="margin: -20px 0 1em 0">
-                            <li>
-                                <a href="https://biboamy.github.io/genre-classification/">Genre/Subgenre classification</a>
-                            </li>
-                            <li>
-                                Mood classification [coming soon]
-                            </li>
-                            <li>
-                                Context classification [coming soon]
-                            </li>
-                        </p>
-                    </article>
+                    </article>                    
                     <hr>
                 </section>
             </div>
